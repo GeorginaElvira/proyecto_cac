@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Condensed&family=Roboto:wght@500&display=swap");
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Days+One&display=swap');
+/* font-family: 'Archivo Black', sans-serif;
+font-family: 'Days One', sans-serif; */
+* {
+    margin: 0;
+}
+
+/* Estilos para el logo inicial */
+.animacion_inicial {
+    background-color: white;
+    height: 100vh; /* Alto de la pantalla */
+    /* object-fit: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed;  */
+    /* Se mantiene en la parte superior de la página */
+    width: 100vw;
+}
+
+.animacion_inicial #logo_inicial {
+
+    width: auto; /* Ancho ajustable */
+    max-width: 90vw; /* El ancho máximo es el 90% del ancho de la ventana */
+    height: auto; /* La altura se ajusta automáticamente */
+    max-height: 90vh; /* La altura máxima es el 90% de la altura de la ventana */
+}
+
+@keyframes rotacion {
+    0% {
+        transform: rotate(0deg); /* Estado inicial: sin rotación, tamaño normal */
+        animation-timing-function: ease-in; /* Arranque suave (ease-in) */
+    }
+    50% {
+        transform: rotate(360deg); /* Rotación completa (360°) */
+        animation-timing-function: ease-out; /* Final suave (ease-out) */
+    }
+    100% {
+        transform: rotate(360deg); /* Rotación completa (360°) */
+        animation-timing-function: ease-out; /* Final suave (ease-out) */
+    }
+}
+@keyframes desvanecimiento {
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    100% {opacity: 0; display: none;}
+}
+
+.cabecera{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    background-size: cover; /* Escala la imagen para cubrir toda la cabecera */
+    height: 300px;
+    width: 100vw; /* Ancho de la pantalla */
+    padding-bottom: 10px;
+    color: negro; /* Color del texto en la cabecera */
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+/* Estilos para el encabezado dentro de .cabecera */
+.cabecera header {
+    display: flex;
+    align-self: top;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px;
+}
+
+/* Estilos para el logo */
+.cabecera #logo {
+    padding: 10px;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    /* margin: 30px; Margen de 30px a la derecha del logo */
+}
+
+/* Estilos para el texto "TEKOVÉ" */
+.cabecera h1 {
+    font-family: 'Montserrat', sans-serif;
+    align-self: center;
+    font-size: 5em;
+    margin-left: 30px; /* Elimina el margen para evitar espacios innecesarios */
+}
+
+/* Estilos para la barra de navegación */
+.cabecera nav {
+    margin: 30px; /* Margen */
+    align-self: flex-end; /* Alineamos la barra de navegación al final del contenedor */
+}
+
+/* Estilos para los enlaces de navegación */
+.cabecera nav a {
+    font-size: 1.2em;
+    margin-right: 20px; /* Separación entre los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: black; /* Color del texto de los enlaces */
+}
+
+
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
